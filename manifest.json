@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "video-pip",
+	"version": "1.0",
+
+	"description": "Open videos in picture in picture",
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content.js"]
+		}
+	],
+
+	"browser_action": {
+		"default_popup": "popup.html"
+	}
+
+}
